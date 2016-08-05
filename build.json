@@ -1,0 +1,14 @@
+{
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `AWS_ACCESS_KEY`}}",
+    "secret_key": "{{user `AWS_SECRET_KEY`}}",
+    "region": "eu-west-1",
+    "source_ami": "ami-963a53e5",
+    "instance_type": "t2.micro",
+    "ssh_username": "ubuntu",
+    "vpc_id": "vpc-9e17a0fa",
+    "subnet_id": "subnet-7cdd5f0a",
+    "ami_name": "packer-stage-{{timestamp}}"
+  }]
+}
