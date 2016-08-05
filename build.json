@@ -1,4 +1,26 @@
 {
+  "provisioners": [
+    {
+      "type": "shell",
+      "execute_command": "echo 'bitnami' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "script": "scripts/setup.sh"
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo 'bitnami' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "script": "scripts/ansible.sh"
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file": "ansible/main.yml"
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo 'bitnami' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "script": "scripts/cleanup.sh"
+    }
+],
+
   "builders": [{
     "type": "amazon-ebs",
     "access_key": "{{user `AWS_ACCESS_KEY`}}",
