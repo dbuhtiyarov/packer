@@ -31,7 +31,7 @@
     "source_ami": "ami-963a53e5",
     "instance_type": "t2.large",
     "ssh_username": "ubuntu",
-    "associate_public_ip_address: "true",
+    "associate_public_ip_address": "true",
     "vpc_id": "vpc-9e17a0fa",
     "subnet_id": "subnet-7cdd5f0a",
     "ami_name": "packer-stage-{{timestamp}}"
