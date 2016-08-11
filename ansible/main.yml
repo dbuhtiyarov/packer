@@ -2,8 +2,8 @@
   become: yes
   gather_facts: yes
 
-#  roles:
-#    - role1
+  roles:
+    - ../roles/test
 #    - role2
 
   tasks:
