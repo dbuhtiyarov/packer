@@ -13,6 +13,11 @@
       "script": "scripts/ansible.sh"
     },
     {
+      "type": "file",
+      "source": "/roles/",
+      "destination": "/etc/roles"
+    }, 
+    {
       "type": "ansible-local",
       "playbook_file": "ansible/main.yml"
     },
