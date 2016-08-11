@@ -1,5 +1,9 @@
 #!/bin/bash -eux
 
+#Copy roles
+
+cp -R roles/* /etc/ansible/roles
+
 # Install Ansible repository.
 apt-get -y update && apt-get -y upgrade
 apt-get -y install software-properties-common
