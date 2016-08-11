@@ -10,5 +10,5 @@ apt-add-repository ppa:ansible/ansible
 apt-get -y update
 apt-get -y install ansible
 
-ls -la /etc/roles
+ls -la /etc/ansible/roles
 
