@@ -14,8 +14,7 @@
     },
     {
       "type": "ansible-local",
-      "playbook_file": "ansible/main.yml",
-      "role_paths": "../roles/wget"
+      "playbook_file": "ansible/main.yml"
     },
     {
       "type": "shell",
