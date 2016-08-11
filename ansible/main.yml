@@ -3,7 +3,7 @@
   gather_facts: yes
 
   roles:
-    - ../roles/wget
+    - wget
 #    - role2
 
   tasks:
