@@ -14,7 +14,7 @@
     },
     {
       "type": "file",
-      "source": "/roles/",
+      "source": "roles/",
       "destination": "/etc/roles"
     }, 
     {
