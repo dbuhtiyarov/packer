@@ -14,8 +14,8 @@
     },
     {
       "type": "file",
-      "source": "roles/",
-      "destination": "/etc/ansible/roles"
+      "source": "roles",
+      "destination": "/tmp"
     }, 
     {
       "type": "ansible-local",
