@@ -10,7 +10,3 @@ apt-get -y update
 apt-get -y install ansible
 
 
-pwd
-ls -la
-#Copy roles
-cp -R roles/* /etc/ansible/roles
